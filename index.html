@@ -24,10 +24,10 @@
                         <p>Area (A) = 0.5 X b X h</p>
                         <p>
                             <!-- Base -->
-                            <input class="border bg-gray-200 text-xl w-24 px-2" placeholder="base" type="text" name="" id="triangle-base">
+                            <input class="border bg-gray-200 text-xl w-24 px-2" placeholder="base" type="number" name="" id="triangle-base">
                             <span class="ml-2">cm</span>
                             <!-- Triangle Height -->
-                            <input class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height" type="text" name="" id="triangle-height">
+                            <input class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height" type="number" name="" id="triangle-height">
                             <span class="ml-2">cm</span>
                         </p>
                         <p class="text-2xl">Area: <span id="triangle-area">0</span> cm<sup>2</sup></p>
@@ -90,10 +90,10 @@
                         <p>Area (A) = πab</p>
                         <p>
                             <!-- Ellipse First Radius -->
-                            <input class="border bg-gray-200 text-xl w-24 px-2" placeholder="Large" type="text" name="" id="ellipse-major-radius">
+                            <input class="border bg-gray-200 text-xl w-24 px-2" placeholder="Large" type="number" name="" id="ellipse-major-radius">
                             <span class="ml-2">cm</span>
                             <!-- Ellipse Second Radius -->
-                            <input class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="Short" type="text" name="" id="ellipse-minor-radius">
+                            <input class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="Short" type="number" name="" id="ellipse-minor-radius">
                             <span class="ml-2">cm</span>
                         </p>
                         <p class="text-2xl">Area: <span id="ellipse-area">0</span> cm<sup>2</sup> </p>
@@ -111,10 +111,10 @@
                         <p>Area (A) = w X l</p>
                         <p>
                             <!-- Ellipse width -->
-                            <input class="border bg-gray-200 text-xl w-24 px-2" placeholder="width" type="text" name="" id="ellipse-width">
+                            <input class="border bg-gray-200 text-xl w-24 px-2" placeholder="width" type="number" name="" id="ellipse-width">
                             <span class="ml-2">cm</span>
                             <!-- Ellipse Length -->
-                            <input class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="length" type="text" name="" id="ellipse-length">
+                            <input class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="length" type="number" name="" id="ellipse-length">
                             <span class="ml-2">cm</span>
                         </p>
                         <p class="text-2xl">Area: <span id="ellipse-area">0</span> cm<sup>2</sup> </p>
@@ -132,10 +132,10 @@
                         <p>Area (A) = w X l</p>
                         <p>
                             <!-- Ellipse width -->
-                            <input class="border bg-gray-200 text-xl w-24 px-2" placeholder="width" type="text" name="" id="ellipse-width">
+                            <input class="border bg-gray-200 text-xl w-24 px-2" placeholder="width" type="number" name="" id="ellipse-width">
                             <span class="ml-2">cm</span>
                             <!-- Ellipse Length -->
-                            <input class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="length" type="text" name="" id="ellipse-length">
+                            <input class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="length" type="number" name="" id="ellipse-length">
                             <span class="ml-2">cm</span>
                         </p>
                         <p class="text-2xl">Area: <span id="ellipse-area">0</span> cm<sup>2</sup> </p>
@@ -148,6 +148,9 @@
             <!-- Area Container -->
             <div class="w-[350px]">
                 <div class="text-4xl">Area Calculator</div>
+                <div id="calculation-entry">
+
+                </div>
             </div>
         </div>
     </main>
