@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <!-- Main Container -->
+        <div class="flex flex-col lg:flex-row">
+            <!-- shape Container -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Triangle Card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="images/triangle.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area (A) = 0.5 X b X h</p>
+                        <p>
+                            <!-- Base -->
+                            <input class="border bg-gray-200 text-xl w-24 px-2" placeholder="base" type="text" name="" id="triangle-base">
+                            <span class="ml-2">cm</span>
+                            <!-- Triangle Height -->
+                            <input class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height" type="text" name="" id="triangle-height">
+                            <span class="ml-2">cm</span>
+                        </p>
+                        <p class="text-2xl">Area: <span id="triangle-area"></span> cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ractangle Card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="images/rectangle.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ractangle</h2>
+                        <p>Area (A) = w X l</p>
+                        <p>
+                            <!-- Ractangle width -->
+                            <input class="border bg-gray-200 text-xl w-24 px-2" placeholder="width" type="text" name="" id="ractangle-width">
+                            <span class="ml-2">cm</span>
+                            <!-- Ractangle Length -->
+                            <input class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="length" type="text" name="" id="ractangle-length">
+                            <span class="ml-2">cm</span>
+                        </p>
+                        <p class="text-2xl">Area: <span id="ractangle-area"></span> cm<sup>2</sup> </p>
+                        <div class="card-actions">
+                            <button onclick="calculateRactangleArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="images/rectangle.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third Card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="images/parallelogram.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Area Container -->
+            <div class="w-[350px]">
+                <div class="text-4xl">Area Calculator</div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/area-calculator.js"></script>
+</body>
+</html>
