@@ -71,7 +71,8 @@ function calculateEllipseArea(){
     const majorRadius = getInputValue('ellipse-major-radius');
     const minorRadius = getInputValue('ellipse-minor-radius');
     const area = Math.PI * majorRadius * minorRadius;
-    setElementInnerText('ellipse-area',area);
+    const areaTwoDecimal = area.toFixed(2);
+    setElementInnerText('ellipse-area',areaTwoDecimal);
 }
 
 
