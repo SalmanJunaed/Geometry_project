@@ -24,7 +24,7 @@ function calculateTriangleArea(){
     const areaSpan = document.getElementById('triangle-area');
     areaSpan.innerText = area;
 }
-
+/*
 // Ractangle
 //button onclick Function
 function calculateRactangleArea(){
@@ -50,4 +50,10 @@ function calculateRactangleArea(){
     // show Ractangle area
     const areaSpan = document.getElementById('ractangle-area');
     areaSpan.innerText = area;
+}
+*/
+
+// reusable function --> reduce duplicate code
+function calculateParallelogramArea(){
+    console.log('pa la la la a')
 }
